@@ -21,11 +21,11 @@ code {
   padding: .2rem .5rem;
   line-height: 1;
 
-  main > & {
-    display: block;
+}
+pre {
+  background-color: rgb(231, 215, 193);
     padding: 1rem;
     font-size: 1.8rem;
-  }
 }
 .flex {
   display: flex;

@@ -6,10 +6,12 @@
 
   <h2>Use the SVG sprites with the <code>&lt;use&gt;</code> element</h2>
   <p>We use the SVG sprites here by means of this code:</p>
-  <code>
-    &lt;svg viewBox="0 0 100 100"&gt;&lt;use href="path/to/sprite.svg#anchor"&gt;&lt;/svg&gt;
-  </code>
-  <p>where <code>anchor</code> is </p>
+  <pre>
+&lt;!-- HTML --&gt;
+&lt;svg viewBox="0 0 100 100"&gt;
+  &lt;use href="path/to/sprite.svg#anchor"&gt;
+&lt;/svg&gt;</pre>
+  <p>where <code>anchor</code> is the <code>id</code> of the <code>&lt;g&gt;</code> element in the SVG sprite file.</p>
   <div class="flex">
     <svg class="circle" viewBox="0 0 100 100">
       <use href="assets/images/sprites.svg#circle" />
@@ -22,7 +24,13 @@
     </svg>
   </div>
   <h2>Use SVG sprite as background-image</h2>
-
+  <p>This one is a bit a cheater, because we don't use <code>background-image</code> here, but actually we are using the sprites as a mask.</p>
+  <pre>
+/* CSS */
+.my-class &#123;
+  --webkit-mask-image: url(path/to/sprite.svg#anchor);
+  mask-image: url(path/to/sprite.svg#anchor);
+&#125;</pre>
   <div class="flex">
     <div class="sprite-bg sprite-bg--circle"></div>
     <div class="sprite-bg sprite-bg--square"></div>
