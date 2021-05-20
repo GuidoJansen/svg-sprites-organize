@@ -1,16 +1,23 @@
-<h1>One new way to organize your SVG images in a sprite</h1>
-<p>
-  See the description of this new way to organize SVG images in a sprite on Medium
-</p>
+<main>
+  <h1>One new way to organize your SVG images in a sprite</h1>
+  <p>
+    See the description of this new way to organize SVG images in a sprite on Medium
+  </p>
 
-<div class="flex">
-  <svg class="circle" viewBox="0 0 100 100">
-    <use href="assets/images/sprites.svg#circle"></use>
-  </svg>
-  <svg class="triangle" viewBox="0 0 100 100">
-    <use href="assets/images/sprites.svg#triangle"></use>
-  </svg>
-  <svg class="square" viewBox="0 0 100 100">
-    <use href="assets/images/sprites.svg#square"></use>
-  </svg>
-</div>
+  <h2>Use the SVG sprites with the <code>&lt;use&gt;</code> element</h2>
+  <p>We use the SVG sprites here by means of this code:</p>
+  <code>
+    &lt;svg viewBox="0 0 100 100"&gt;&lt;use href="path/to/sprite.svg#anchor"&gt;&lt;/svg&gt;
+  </code>
+  <div class="flex">
+    <svg class="circle" viewBox="0 0 100 100">
+      <use href="assets/images/sprites.svg#circle" />
+    </svg>
+    <svg class="triangle" viewBox="0 0 100 100">
+      <use href="assets/images/sprites.svg#triangle" />
+    </svg>
+    <svg class="square" viewBox="0 0 100 100">
+      <use href="assets/images/sprites.svg#square" />
+    </svg>
+  </div>
+</main>

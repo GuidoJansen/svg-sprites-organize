@@ -2,16 +2,32 @@
 html {
   font: 62.5%/1.2 sans-serif;
 }
+main {
+  max-width: 600px;
+  margin: auto;
+}
 h1 {
   font-size: 2.8rem;
+}
+h2 {
+  font-size: 2.2rem;
 }
 p {
   font-size: 1.6rem;
 }
+code {
+  background-color: rgb(231, 215, 193);
 
+  main > & {
+    display: block;
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+}
 .flex {
   display: flex;
 }
+
 .circle,
 .square,
 .triangle {
