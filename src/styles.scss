@@ -56,3 +56,32 @@ code {
     color: #ff0000;
   }
 }
+
+.sprite-bg {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  transition: background-color 1s;
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  margin: 1rem;  
+
+  &:hover {
+    background-color: silver;
+  }
+  &--circle {
+    -webkit-mask-image: url(assets/images/sprites.svg#circle);
+    mask-image: url(assets/images/sprites.svg#circle);
+  }
+  &--square {
+    -webkit-mask-image: url(assets/images/sprites.svg#square);
+    mask-image: url(assets/images/sprites.svg#square);
+  }
+  &--triangle {
+    -webkit-mask-image: url(assets/images/sprites.svg#triangle);
+    mask-image: url(assets/images/sprites.svg#triangle);
+  }
+}
