@@ -1,4 +1,4 @@
-/* Add application styles & imports to this file! */
+  /* Add application styles & imports to this file! */
 html {
   font: 62.5%/1.2 sans-serif;
 }
@@ -9,3 +9,31 @@ p {
   font-size: 1.6rem;
 }
 
+.flex {
+  display: flex;
+}
+.circle,
+.square,
+.triangle {
+  transition: color 1s;
+}
+
+.circle {
+  color: #88ff88;
+  &:hover {
+    color: #00ff00;
+  }
+
+}
+.square {
+  color: #8888ff;
+  &:hover {
+    color: #0000ff;
+  }
+}
+.triangle {
+  color: #ff8888;
+  &:hover {
+    color: #ff0000;
+  }
+}
