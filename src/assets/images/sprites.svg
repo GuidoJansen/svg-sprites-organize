@@ -1,0 +1,24 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100" width="100" height="100">
+<defs>
+    <style>
+      g[id] {
+        display: none;
+      }
+      g[id]:target {
+        display: inline;
+      }
+    </style>
+  </defs>
+  <g id="circle" viewbox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+    <title>Circle</title>
+    <circle cx="50" cy="50" r="45" style="fill:currentColor;" />
+  </g>
+  <g id="square" viewbox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+    <title>Square</title>
+    <rect x="5" y="5" width="90" height="90" style="fill:currentColor;" />
+  </g>
+  <g id="triangle" viewbox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+    <title>Triangle</title>
+    <path d="M50,5L95,95L5,95L50,5Z" style="fill:currentColor;" />
+  </g>
+</svg>
