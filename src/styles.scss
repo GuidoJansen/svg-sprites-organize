@@ -85,3 +85,52 @@ pre {
     mask-image: url(assets/images/sprites.svg#triangle);
   }
 }
+
+button {
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem 1.6rem;
+  background-color: lightblue;
+  display: inline-block;
+  margin: .3ch;
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  &.sprite-button {
+    color: blue;
+    transition: 1s;
+    transition-property: color, background-color;
+    &:hover {
+      background-color: pink;
+      color: red;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 1em;
+      width: 1em;
+      vertical-align: text-bottom;
+      background-color: currentColor;
+      margin-right: .8ch;
+
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+    }
+
+    &--circle:before {
+      -webkit-mask-image: url(assets/images/sprites.svg#circle);
+      mask-image: url(assets/images/sprites.svg#circle);
+    }
+    &--square:before {
+      -webkit-mask-image: url(assets/images/sprites.svg#square);
+      mask-image: url(assets/images/sprites.svg#square);
+    }
+    &--triangle:before {
+      -webkit-mask-image: url(assets/images/sprites.svg#triangle);
+      mask-image: url(assets/images/sprites.svg#triangle);
+    }
+  }
+}
